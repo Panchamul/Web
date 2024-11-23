@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #A2D2FF;
+}
+
+header {
+    background-color: #9B5DE5;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+   
+}
+
+.logo {
+    width: 80px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#products {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.product {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+    background-color: white;
+}
+
+
+#products, #testimonials, #blog {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.product, .testimonial, .blog-entry {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+    border-radius: 8px;
+    background-color: white;
+}
+
+button {
+    background-color: #F15BB5;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+#gallery {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    background-color: #A2D2FF;
+ }
+ 
+ .gallery-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    background-color: #A2D2FF;
+ }
+ 
+ .gallery-item {
+    min-width: 100%;
+    box-sizing: border-box;
+ }
+ 
+ .gallery-item img {
+    width: 100%;
+    display: block;
+ }
+ 
+ /* Navegación del Slider */
+ .gallery-navigation {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: -50px;
+ }
+ 
+ .nav-button {
+    background-color: #F15BB5;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+ }
+ 
+ .nav-button:hover {
+ background-color: #883868;
+ }
+
+ h2{
+    text-align: center;
+ }
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #9B5DE5;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
