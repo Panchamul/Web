@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopEase - Productos</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <img class="logo" src="../media/images/logo.png" alt="ShopEase Logo">
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="products.html">Productos</a></li>
+                    <li><a href="gallery.html">Galería</a></li>
+                    <li><a href="testimonials.html">Testimonios</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contacto</a></li>
+                    <li><a href="cart.html">Carrito</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="product-list">
+            <h1>Nuestros Productos</h1>
+            <div class="product-gallery">
+                <article class="product-item">
+                    <img src="../media/images/products/product1/front.jpg" alt="Producto 1">
+                    <h2>Producto 1</h2>
+                    <p>Descripción breve del producto. Perfecto para tus necesidades diarias.</p>
+                    <button onclick="addToCart('Producto 1')">Añadir al Carrito</button>
+                </article>
+                <article class="product-item">
+                    <img src="../media/images/products/product2/front.jpg" alt="Producto 2">
+                    <h2>Producto 2</h2>
+                    <p>Descripción breve del producto. Innovación y calidad en un solo lugar.</p>
+                    <button onclick="addToCart('Producto 2')">Añadir al Carrito</button>
+                </article>
+                <!-- Repeat the above block for each product, adjusting links and descriptions accordingly -->
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <p>© 2024 ShopEase, Inc. | Todos los derechos reservados</p>
+            <p>Contacto: info@shopease.com | Teléfono: +503 1234 5678</p>
+        </div>
+    </footer>
+    <script src="../js/script.js"></script>
+</body>
+</html>

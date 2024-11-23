@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopEase - Contacto</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <img class="logo" src="../media/images/logo.png" alt="ShopEase Logo">
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="products.html">Productos</a></li>
+                    <li><a href="gallery.html">Galería</a></li>
+                    <li><a href="testimonials.html">Testimonios</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contacto</a></li>
+                    <li><a href="cart.html">Carrito</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="contact-info">
+            <h1>Contacto</h1>
+            <p>¿Tienes alguna pregunta o comentario? No dudes en contactarnos a través de los siguientes medios:</p>
+            <ul>
+                <li>Email: info@shopease.com</li>
+                <li>Teléfono: +503 1234 5678</li>
+                <li>Dirección: Calle Principal 123, San Salvador, El Salvador</li>
+            </ul>
+        </section>
+        <section id="contact-form">
+            <h2>Envíanos un Mensaje</h2>
+            <form action="submit_form.php" method="POST">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Enviar Mensaje</button>
+            </form>
+        </section>
+        <section id="map">
+            <h2>Ubicación</h2>
+            <p>Visítanos en nuestra oficina principal en San Salvador.</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3876.033854322237!2d-89.20320228451015!3d13.702684989990293!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f6330397c6a33e1%3A0x5e8f9f664b9a7b7f!2sSan%20Salvador!5e0!3m2!1sen!2ssv!4v1609601930671!5m2!1sen!2ssv" width="600" height="450" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <p>© 2024 ShopEase, Inc. | Todos los derechos reservados</p>
+            <p>Contacto: info@shopease.com | Teléfono: +503 1234 5678</p>
+        </div>
+    </footer>
+    <script src="../js/script.js"></script>
+</body>
+</html>

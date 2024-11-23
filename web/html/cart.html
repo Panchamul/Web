@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopEase - Carrito</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <img class="logo" src="../media/images/logo.png" alt="ShopEase Logo">
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="products.html">Productos</a></li>
+                    <li><a href="gallery.html">Galería</a></li>
+                    <li><a href="testimonials.html">Testimonios</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contacto</a></li>
+                    <li><a href="cart.html">Carrito</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="cart">
+            <h1>Carrito de Compras</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Producto</th>
+                        <th>Precio</th>
+                        <th>Cantidad</th>
+                        <th>Total</th>
+                        <th>Eliminar</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Example cart item -->
+                    <tr>
+                        <td>Producto 1</td>
+                        <td>$10.00</td>
+                        <td><input type="number" value="1" min="1"></td>
+                        <td>$10.00</td>
+                        <td><button onclick="removeFromCart('Producto 1')">X</button></td>
+                    </tr>
+                    <!-- Additional cart items would be added dynamically here -->
+                </tbody>
+            </table>
+            <div class="cart-total">
+                <h2>Total: $10.00</h2>
+            </div>
+            <div class="checkout-buttons">
+                <button onclick="updateCart()">Actualizar Carrito</button>
+                <button onclick="checkout()">Finalizar Compra</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <p>© 2024 ShopEase, Inc. | Todos los derechos reservados</p>
+            <p>Contacto: info@shopease.com | Teléfono: +503 1234 5678</p>
+        </div>
+    </footer>
+    <script src="../js/script.js"></script>
+</body>
+</html>
