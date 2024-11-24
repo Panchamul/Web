@@ -1,0 +1,151 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700);
+@import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic);
+
+/* Variables */
+:root {
+  --card-width: 350px;
+  --card-height: 500px;
+  --h-color: #9CC9E3;
+  --yellow: #D0BB57;
+  --txt-color: #DCE3E7;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #323c41;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Contenedor de las tarjetas */
+.blog-articles {
+  display: flex;
+  flex-wrap: wrap; /* Permite que las tarjetas pasen a la siguiente fila si no caben */
+  gap: 20px; /* Espaciado entre las tarjetas */
+  justify-content: center; /* Centra las tarjetas horizontalmente */
+  padding: 20px;
+}
+
+/* Tarjetas individuales */
+.blog-card {
+  width: var(--card-width);
+  height: var(--card-height);
+  border-radius: 10px;
+  box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1765/bg-blog-card.jpg) no-repeat center center;
+  background-size: cover;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.blog-card:hover {
+  transform: translateY(-5px); /* Desplaza la tarjeta hacia arriba */
+  box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.7);
+}
+
+.color-overlay {
+  background: rgba(84, 104, 110, 0.4);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  transition: background 0.3s cubic-bezier(.33, .66, .66, 1);
+}
+
+.gradient-overlay {
+  background: linear-gradient(rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, .6) 21%);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 15;
+}
+
+.blog-card:hover .color-overlay {
+  background: rgba(84, 104, 110, 0.8);
+}
+
+.title-content {
+  text-align: center;
+  margin: 20px 0;
+  position: relative;
+  z-index: 20;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  color: var(--h-color);
+  margin-bottom: 10px;
+}
+
+hr {
+  width: 50px;
+  height: 3px;
+  margin: 10px auto;
+  border: 0;
+  background: var(--yellow);
+}
+
+.intro {
+  width: 80%;
+  margin: 0 auto 10px auto;
+  color: var(--txt-color);
+  font-family: 'Droid Serif', serif;
+  font-size: 13px;
+  font-style: italic;
+  line-height: 18px;
+}
+
+.card-info {
+  margin: 0 auto;
+  padding: 20px; /* Espacio interno */
+  color: var(--txt-color);
+  font-family: 'Droid Serif', serif;
+  font-size: 16px;
+  line-height: 24px;
+  z-index: 20;
+  position: relative;
+}
+
+.utility-info {
+  margin-top: 20px;
+  position: relative;
+  z-index: 20;
+}
+
+.utility-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 15px; /* Espaciado entre elementos */
+}
+
+.utility-list li {
+  margin: 0;
+  padding-left: 22px;
+  font-size: 14px;
+  color: var(--txt-color);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.utility-list .comments {
+  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1765/icon-chat.svg');
+}
+
+.utility-list .date {
+  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1765/icon-calendar.svg');
+}

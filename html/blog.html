@@ -5,6 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ShopEase - Blog</title>
     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/blog-card-new.css"> <!-- Nuevo CSS para las tarjetas -->
+    <style>
+        /* Estilo adicional para alinear tarjetas */
+        .blog-articles {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .blog-card {
+            flex: 1 1 calc(33.333% - 20px); /* Tres tarjetas por fila */
+            max-width: 350px; /* Limitar el ancho */
+            height: auto;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -26,21 +42,65 @@
         <section id="blog">
             <h1>Blog de ShopEase</h1>
             <div class="blog-articles">
-                <article class="blog-post">
-                    <h2>Consejos para una Mejor Experiencia de Compra Online</h2>
-                    <p>Publicado el 01 de Enero, 2024</p>
-                    <img src="../media/images/blog/blog1.jpg" alt="Consejos de Compras Online">
-                    <p>En este artículo, exploramos las mejores prácticas para asegurar que tu experiencia de compra online sea segura y placentera. Leer más...</p>
-                    <a href="blog/consejos-compra-online.html">Leer más</a>
-                </article>
-                <article class="blog-post">
-                    <h2>Nuevos Productos en Nuestra Tienda</h2>
-                    <p>Publicado el 15 de Enero, 2024</p>
-                    <img src="../media/images/blog/blog2.jpg" alt="Nuevos Productos">
-                    <p>Descubre los últimos productos añadidos a nuestro catálogo y por qué deberías estar emocionado. Leer más...</p>
-                    <a href="blog/nuevos-productos.html">Leer más</a>
-                </article>
-                <!-- Additional blog posts -->
+                <!-- Tarjeta de blog 1 -->
+                <div class="blog-card spring-fever">
+                    <div class="title-content">
+                        <h3>Consejos para una Mejor Experiencia de Compra Online</h3>
+                        <hr />
+                        <div class="intro">Publicado el 01 de Enero, 2024</div>
+                    </div>
+                    <div class="card-info">
+                        Explora las mejores prácticas para asegurar que tu experiencia de compra online sea segura y placentera.
+                    </div>
+                    <div class="utility-info">
+                        <ul class="utility-list">
+                            <li class="comments">3 comentarios</li>
+                            <li class="date">01.01.2024</li>
+                        </ul>
+                    </div>
+                    <div class="gradient-overlay"></div>
+                    <div class="color-overlay"></div>
+                </div>
+
+                <!-- Tarjeta de blog 2 -->
+                <div class="blog-card spring-fever">
+                    <div class="title-content">
+                        <h3>Nuevos Productos en Nuestra Tienda</h3>
+                        <hr />
+                        <div class="intro">Publicado el 15 de Enero, 2024</div>
+                    </div>
+                    <div class="card-info">
+                        Descubre los últimos productos añadidos a nuestro catálogo y por qué deberías estar emocionado.
+                    </div>
+                    <div class="utility-info">
+                        <ul class="utility-list">
+                            <li class="comments">5 comentarios</li>
+                            <li class="date">15.01.2024</li>
+                        </ul>
+                    </div>
+                    <div class="gradient-overlay"></div>
+                    <div class="color-overlay"></div>
+                </div>
+
+                <!-- Tarjeta de blog 3 -->
+                <div class="blog-card spring-fever">
+                    <div class="title-content">
+                        <h3>Cómo Aprovechar las Ofertas en ShopEase</h3>
+                        <hr />
+                        <div class="intro">Publicado el 25 de Enero, 2024</div>
+                    </div>
+                    <div class="card-info">
+                        Aprende a encontrar y aprovechar las mejores ofertas que ShopEase tiene para ti.
+                    </div>
+                    <div class="utility-info">
+                        <ul class="utility-list">
+                            <li class="comments">2 comentarios</li>
+                            <li class="date">25.01.2024</li>
+                        </ul>
+                    </div>
+                    <div class="gradient-overlay"></div>
+                    <div class="color-overlay"></div>
+                </div>
             </div>
         </section>
     </main>
