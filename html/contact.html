@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ShopEase - Contacto</title>
-    <link rel="stylesheet" href="../css/styles.css">
-    <link rel="stylesheet" href="../css/contact.css"> <!-- Estilo específico para el formulario -->
+    <link rel="stylesheet" href="../css/styles.css"> <!-- CSS general para el menú -->
+    <link rel="stylesheet" href="../css/contact-page.css"> <!-- CSS específico del contacto -->
 </head>
 <body>
     <header>
@@ -23,34 +23,55 @@
             </nav>
         </div>
     </header>
+
     <main>
-        <section id="contact-form">
-            <form class="form">
-                <h2>CONTÁCTANOS</h2>
-                <p type="Nombre:">
-                    <input placeholder="Escribe tu nombre aquí..." name="name" required></input>
-                </p>
-                <p type="Correo Electrónico:">
-                    <input placeholder="Déjanos saber cómo contactarte..." type="email" name="email" required></input>
-                </p>
-                <p type="Mensaje:">
-                    <textarea placeholder="¿Qué te gustaría decirnos?" name="message" rows="4" required></textarea>
-                </p>
-                <button type="submit">Enviar Mensaje</button>
-                <div>
-                    <span class="fa fa-phone"></span> +503 1234 5678
-                    <br>
-                    <span class="fa fa-envelope-o"></span> contacto@shopease.com
-                </div>
-            </form>
+        <section id="contact">
+            <div class="sectionheader">
+                <h1>CONTACTO</h1>
+            </div>
+            <article>
+                <p>Queremos escucharte. Déjanos tu mensaje y nos pondremos en contacto contigo lo antes posible.</p>
+
+                <!-- Botón con el ícono de sobre -->
+                <label for="checkcontact" class="contactbutton">
+                    <div class="mail"></div> <!-- Ícono de sobre -->
+                </label>
+                <input id="checkcontact" type="checkbox">
+
+                <!-- Formulario de contacto -->
+                <form class="contactform" id="contact-form" onsubmit="sendMessage(event)">
+                    <p class="input_wrapper">
+                        <input type="text" name="contact_nom" id="contact_nom" placeholder=" " required>
+                        <label for="contact_nom">NOMBRE</label>
+                    </p>
+                    <p class="input_wrapper">
+                        <input type="email" name="contact_email" id="contact_email" placeholder=" " required>
+                        <label for="contact_email">CORREO</label>
+                    </p>
+                    <p class="input_wrapper">
+                        <input type="text" name="contact_sujet" id="contact_sujet" placeholder=" " required>
+                        <label for="contact_sujet">ASUNTO</label>
+                    </p>
+                    <p class="textarea_wrapper">
+                        <textarea name="contact_message" id="contact_message" placeholder=" " required></textarea>
+                        <label for="contact_message">MENSAJE</label>
+                    </p>
+                    <p class="submit_wrapper">
+                        <input type="submit" value="ENVIAR">
+                    </p>
+                </form>
+                
+                
+            </article>
         </section>
     </main>
+
     <footer>
         <div class="footer-container">
             <p>© 2024 ShopEase, Inc. | Todos los derechos reservados</p>
             <p>Contacto: info@shopease.com | Teléfono: +503 1234 5678</p>
         </div>
     </footer>
-    <script src="../js/script.js"></script>
+    <script src="../js/contact.js"></script>
 </body>
 </html>
