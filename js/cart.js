@@ -146,6 +146,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Vaciar carrito
     if (DOMbotonVaciar) {
         DOMbotonVaciar.addEventListener('click', () => {
+            alert('Los productos se han eliminado');
             carrito = [];
             guardarCarritoEnLocalStorage();
             renderizarCarrito();
