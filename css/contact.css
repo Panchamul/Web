@@ -33,6 +33,7 @@ h2 {
 /* Campos del formulario */
 input, textarea {
     width: 100%;
+    max-width: 100%; /* Evita que se extienda más allá del contenedor */
     padding: 10px;
     box-sizing: border-box;
     background: none;
@@ -44,6 +45,7 @@ input, textarea {
     border-bottom: 2px solid #bebed2;
     color: #333;
     margin-bottom: 20px;
+    resize: none; /* Desactiva el cambio manual de tamaño */
 }
 
 input:focus, textarea:focus {
