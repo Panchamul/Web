@@ -12,6 +12,12 @@ body {
     line-height: 1.6;
 }
 
+h2 {
+    font-size: 2rem;
+    color: #FB8500;
+    margin-bottom: 15px;
+    position: relative;
+  }
 /*--------------------------------------------------------------------------*/
 /*Diseño del menu*/
 header {
@@ -88,7 +94,7 @@ nav ul li a {
 }
 .icono {
     background-repeat: no-repeat;
-    background-position: left center;
+    background-position: center;
     padding-left: 60px;
     background-size: 30px;
     margin-bottom: 40px;
@@ -100,6 +106,39 @@ nav ul li a {
         margin-bottom:0;
     }
 }
+
+/*--------------------------------------------------------------------*/
+/*productos*/
+  #caracteristica {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    
+}
+
+.caracteristicas {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+    background-color: white;
+}
+
+.caracteristica-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+  }
+  
+  .caracteristica-header h2 {
+    font-size: 2rem;
+    margin: 0;
+  }
+
+
 /*--------------------------------------------------------------------*/
 /*footer*/
 /* Footer Styles */
@@ -108,27 +147,29 @@ footer {
     color: white;
     text-align: center;
     padding: 12px 20px;
-    position: fixed;
+    position: relative; /* Cambia de fixed a relative */
     bottom: 0;
     width: 100%;
-}
-
-/* Responsive Design */
-@media (max-width: 600px) {
-    nav ul {
-        text-align: center;
-    }
-
-    nav ul li {
-        display: block;
-        margin-bottom: 10px;
-    }
-
-    header {
-        padding: 20px 10px;
-    }
-
-    main {
-        padding: 10px;
-    }
-}
+  }
+  
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+      nav ul {
+          text-align: center;
+      }
+  
+      nav ul li {
+          display: block;
+          margin-bottom: 10px;
+      }
+  
+      header {
+          padding: 20px 10px;
+      }
+  
+      main {
+          padding: 10px;
+      }
+  }
+  
