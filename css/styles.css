@@ -367,16 +367,16 @@ button:hover {
     background-color: #005580;
 }
 
-/* Footer Styles */
 footer {
-    background-color: #219EBC;
-    color: white;
-    text-align: center;
-    padding: 12px 20px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+  background-color: #219EBC;
+  color: white;
+  text-align: center;
+  padding: 12px 20px;
+  position: relative; /* Cambia de fixed a relative */
+  bottom: 0;
+  width: 100%;
 }
+
 
 /* Responsive Design */
 @media (max-width: 600px) {
