@@ -1,0 +1,99 @@
+/* Botón para mostrar/ocultar el carrito */
+.btn-toggle-cart {
+    position: fixed; /* Fija el botón en la pantalla */
+    top: 20px; /* Distancia desde la parte superior */
+    right: 20px; /* Distancia desde el lado derecho */
+    padding: 10px 15px; /* Tamaño específico para este botón */
+    background-color: #28a745; /* Color verde */
+    color: #ffffff; /* Texto blanco */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor a pointer */
+    font-size: 0.9rem; /* Ajusta el tamaño del texto */
+    font-weight: bold; /* Texto en negrita */
+    text-transform: uppercase; /* Texto en mayúsculas */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra para destacar */
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+    transition: all 0.3s ease; /* Transiciones suaves */
+}
+
+.btn-toggle-cart:hover {
+    background-color: #218838; /* Color verde más oscuro */
+    transform: scale(1.05); /* Efecto de agrandamiento al pasar el mouse */
+}
+
+
+
+/* Carrito */
+.cart {
+    position: fixed;
+    top: 60px;
+    right: 20px;
+    width: 300px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    z-index: 999;
+}
+
+.cart h2 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.cart-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.cart-list .list-group-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    margin-bottom: 10px;
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+.total {
+    font-weight: bold;
+    text-align: right;
+    margin: 15px 0;
+}
+
+.btn-clear,
+.btn-paypal {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.btn-clear {
+    background-color: #dc3545;
+    color: #ffffff;
+}
+
+.btn-clear:hover {
+    background-color: #c82333;
+}
+
+.btn-paypal {
+    background-color: #ffc439;
+    color: #000000;
+}
+
+.btn-paypal:hover {
+    background-color: #e0a800;
+}

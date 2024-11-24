@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ShopEase - Productos</title>
     <link rel="stylesheet" href="../css/products.css">
+    <link rel="stylesheet" href="../css/cart.css">
 </head>
 <body>
     <header>
@@ -53,6 +54,23 @@
 
     </div>
     <br>
+    
+
+
+     <!---------------------------------------------------------------------------------------------------------------------------------------------------->
+     <!-- Botón para mostrar el carrito -->
+     <button id="toggle-cart" class="btn-toggle-cart">Mostrar Carrito</button>
+
+     <!-- Carrito (Oculto inicialmente) -->
+     <aside id="cart-container" class="cart" style="display: none;">
+         <h2>Carrito</h2>
+         <ul id="carrito" class="cart-list"></ul>
+         <hr>
+         <p class="total">Total: <span id="total">0.00</span> €</p>
+         <button id="boton-vaciar" class="btn-clear">Vaciar</button>
+         <button id="boton-pagar" class="btn-paypal">Pagar con PayPal</button>
+     </aside>
+
     <!----------------------------------------------------------------->
     <div class="caracteristica-header">
         <h2>Lo mas popular</h2>
@@ -136,14 +154,13 @@
    <br>
     </main>
 
-
-     <!---------------------------------------------------------------------------------------------------------------------------------------------------->
-    <footer>
-        <div class="footer-container">
-            <p>© 2024 ShopEase, Inc. | Todos los derechos reservados</p>
-            <p>Contacto: info@shopease.com | Teléfono: +503 1234 5678</p>
-        </div>
-    </footer>
-    <script src="../js/script.js"></script>
+ <footer>
+     <div class="footer-container">
+         <p>© 2024 ShopEase, Inc. | Todos los derechos reservados</p>
+         <p>Contacto: info@shopease.com | Teléfono: +503 1234 5678</p>
+     </div>
+ </footer>
+ <script src="../js/cart.js"></script> <!-- Nuevo archivo JavaScript para el carrito -->
+ <script src="../js/products.js"></script> <!-- Archivo JavaScript para cargar los productos -->
 </body>
 </html>
