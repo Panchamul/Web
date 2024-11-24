@@ -1,0 +1,88 @@
+/* General styles for the cart page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+    color: #219EBC;
+}
+
+/* Cart Container */
+#cart-container {
+    padding: 20px;
+    max-width: 900px;
+    margin: 20px auto;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+table th {
+    background-color: #219EBC;
+    color: white;
+    font-weight: bold;
+}
+
+/* Total Section */
+.cart-total {
+    text-align: right;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Checkout Buttons */
+.checkout-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+/* General button styles */
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Clear Cart Button */
+.btn-clear {
+    background-color: #dc3545;
+    color: white;
+}
+
+.btn-clear:hover {
+    background-color: #c82333;
+}
+
+/* PayPal Button */
+.btn-paypal {
+    background-color: #ffc439;
+    color: black;
+}
+
+.btn-paypal:hover {
+    background-color: #e0a800;
+}
