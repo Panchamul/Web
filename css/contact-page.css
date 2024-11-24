@@ -184,6 +184,11 @@ body {
     transform: translateY(-2px);
 }
 
+/* Ocultar la checkbox */
+#checkcontact {
+    display: none;
+}
+
 /* Responsividad para pantallas pequeñas */
 @media (max-width: 500px) {
     #contact {
