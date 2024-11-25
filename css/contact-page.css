@@ -200,3 +200,50 @@ body {
         font-size: 0.8em;
     }
 }
+
+/*Section added by davidorellanap 11/Nov/2024*/
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+    justify-content: center !important; /* Centra los elementos horizontalmente */
+  }
+  .menu li {
+    display: inline;
+    text-align: center;
+  }
+  .menu a {
+    color: white;
+    text-decoration: none;
+  }
+  .menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  /* Responsivo */
+  @media (max-width: 768px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        background-color: #444;
+        position: absolute;
+        top: 20%;
+        left: 0;
+        width: 200px;
+        padding: 10px;
+        z-index: 1000;
+    }
+    .menu.visible {
+        display: flex;
+    }
+    .menu-toggle {
+        display: block;
+    }
+}
